@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Weaver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #111827; /* gray-900 */
+            --bg-secondary: #1F2937; /* gray-800 */
+            --bg-tertiary: #374151; /* gray-700 */
+            --border-primary: #4B5563; /* gray-600 */
+            --text-primary: #F3F4F6; /* gray-100 */
+            --text-secondary: #D1D5DB; /* gray-300 */
+            --text-tertiary: #9CA3AF; /* gray-400 */
+            --accent-primary: #4F46E5; /* indigo-600 */
+            --accent-secondary: #818CF8; /* indigo-400 */
+            --green-accent: #10B981; /* green-500 */
+            --red-accent: #F43F5E; /* rose-500 */
+        }
+        body {
+            background-color: var(--bg-primary);
+            font-family: 'Inter', sans-serif;
+        }
+        .accent-gradient {
+            background-image: linear-gradient(to right, var(--accent-primary), #7c3aed);
+        }
+        .accent-gradient-hover:hover {
+            background-image: linear-gradient(to right, #6366f1, #8b5cf6);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
